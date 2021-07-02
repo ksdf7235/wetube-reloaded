@@ -1,19 +1,16 @@
 # Wetube Reloaded
 
-/ => Home
-/join => Join
-/login => Login
-/search => Search
+/ -> Home
+/join -> Join
+/login -> Login
+/search -> Search
 
-/users/:id => See user
-/users/logout => Log Out
-/users/edit => Edit My profile
-/users/delete => Delete My profile
+/users/:id -> See User
+/users/logout -> Log Out
+/users/edit -> Edit MY Profile
+/users/delete -> Delete MY Profile
 
-/videos/:id => See video
-/videos/:id/edit => Edit video
-/videos/:id/delete => Delete Video
-/videos/upload => Upload video
-
-/videos/comments => Comment on a Video
-/videos/comments/delete => Delete a Comment of a Video
+/videos/:id -> See Video
+/videos/:id/edit -> Edit Video
+/videos/:id/delete -> Delete Video
+/videos/upload -> Upload Video
