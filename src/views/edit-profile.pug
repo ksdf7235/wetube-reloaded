@@ -1,6 +1,7 @@
 extends base.pug
 
 block content
+    img(src="/"+loggedInUser.avatarUrl, width="100",heigt="100")
     form(method="POST",enctype="multipart/form-data")
         lable(for="avatar") Avatar
         input(type="file", id="avatar", name="avatar",accept="image/*")
