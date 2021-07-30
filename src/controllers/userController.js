@@ -149,7 +149,6 @@ export const postEdit = async(req,res) => {
     body:  {name,email,username,location},
     file,
   } = req;
-  console.log(file);
   const updateUser = await User.findByIdAndUpdate(
     _id,{
     avatarUrl: file ? file.path : avatarUrl,
@@ -210,7 +209,7 @@ export const postChangePassword = async(req,res) => {
      errorMessage:"The password does not match the confirmation"
     });
   }
-  user.password= newpa;
+  user.password = newpa;
   await user.save()
   req.session.user.password = user.password
   //notification
